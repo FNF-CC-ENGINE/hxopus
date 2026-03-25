@@ -137,8 +137,8 @@
    typedef signed int ogg_int32_t;
    typedef unsigned int ogg_uint32_t;
    typedef long long int ogg_int64_t;
-
-#elif defined(__ANDROID__)
+   
+#elif defined(__ANDROID__) || defined(__EMSCRIPTEN__)
 
 #  include <stdint.h>
    typedef int16_t ogg_int16_t;
